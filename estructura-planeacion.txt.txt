@@ -1,0 +1,49 @@
+📁 PROYECTO GAME-SERVER (GitHub)
+│
+├── 📁 backend/                    # Servidor Node.js
+│   ├── 📁 src/
+│   │   ├── server.js              # ✅ WebSocket Server (YA EXISTE)
+│   │   ├── game-logic.js          # Lógica del juego
+│   │   ├── database.js            # Conexión a Redis/DynamoDB
+│   │   ├── websocket-handler.js   # Manejador de conexiones
+│   │   └── config.js              # Configuración (IP, puertos, etc)
+│   ├── 📁 logs/                   # Logs del servidor
+│   ├── 📁 scripts/                # Scripts útiles
+│   │   ├── deploy.sh              # Despliegue automático
+│   │   ├── update.sh              # Actualización de código
+│   │   └── monitor.sh             # Monitoreo
+│   ├── package.json               # Dependencias
+│   ├── .env                       # Variables de entorno (NO SUBIR A GIT)
+│   ├── .gitignore                 # ✅ YA EXISTE
+│   └── README.md                  # Documentación
+│
+├── 📁 frontend/                   # Proyecto Angular
+│   ├── 📁 src/
+│   │   ├── 📁 app/
+│   │   │   ├── 📁 core/
+│   │   │   │   ├── 📁 services/
+│   │   │   │   │   ├── websocket.service.ts  # Conexión al servidor
+│   │   │   │   │   ├── game.service.ts       # Lógica del juego
+│   │   │   │   │   └── three.service.ts      # Render 3D
+│   │   │   │   └── 📁 models/
+│   │   │   │       └── player.model.ts
+│   │   │   ├── 📁 game/
+│   │   │   │   ├── game.component.ts
+│   │   │   │   ├── game.component.html
+│   │   │   │   └── game.component.scss
+│   │   │   ├── app.module.ts
+│   │   │   └── app-routing.module.ts
+│   │   ├── 📁 environments/
+│   │   │   ├── environment.ts        # Desarrollo (localhost)
+│   │   │   └── environment.prod.ts   # Producción (IP ELÁSTICA)
+│   │   └── index.html
+│   ├── angular.json
+│   ├── package.json
+│   └── proxy.conf.json              # Proxy para desarrollo
+│
+├── 📁 deploy/                      # Archivos de despliegue
+│   ├── docker-compose.yml          # Si usas Docker
+│   ├── nginx.conf                  # Configuración Nginx
+│   └── cloudformation.yml          # Infraestructura como código
+│
+└── README.md                       # Documentación del proyecto

@@ -5,7 +5,7 @@
 # CONFIGURACIÓN
 # ============================================
 #          /home/ec2-user/game-server/catGameServer/scripts
-GAME_DIR="/home/ec2-user/game-server/catGameServer/game-server"  # Ruta de tu proyecto
+# GAME_DIR="/home/ec2-user/game-server/catGameServer/game-server"  # Ruta de tu proyecto
 PROCESS_NAME="game-server"                      # Nombre en PM2
 LOG_FILE="/home/ec2-user/monitor.log"          # Archivo de logs
 REFRESH_INTERVAL=5                              # Segundos entre actualizaciones
@@ -120,11 +120,11 @@ show_dashboard() {
 # ============================================
 
 # Verificar que existe el directorio
-if [ ! -d "$GAME_DIR" ]; then
-    echo "❌ Error: No se encuentra el directorio $GAME_DIR"
-    echo "   Por favor, actualiza la variable GAME_DIR en el script"
-    exit 1
-fi
+# if [ ! -d "$GAME_DIR" ]; then
+#     echo "❌ Error: No se encuentra el directorio $GAME_DIR"
+#     echo "   Por favor, actualiza la variable GAME_DIR en el script"
+#     exit 1
+# fi
 
 # Verificar que PM2 está instalado
 if ! command -v pm2 &> /dev/null; then
