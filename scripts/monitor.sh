@@ -4,7 +4,8 @@
 # ============================================
 # CONFIGURACIÓN
 # ============================================
-GAME_DIR="/home/ec2-user/game-server/backend/catGameServer/game-server"  # Ruta de tu proyecto
+#          /home/ec2-user/game-server/catGameServer/scripts
+GAME_DIR="/home/ec2-user/game-server/catGameServer/game-server"  # Ruta de tu proyecto
 PROCESS_NAME="game-server"                      # Nombre en PM2
 LOG_FILE="/home/ec2-user/monitor.log"          # Archivo de logs
 REFRESH_INTERVAL=5                              # Segundos entre actualizaciones
