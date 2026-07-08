@@ -202,7 +202,7 @@ server.listen(PORT, '0.0.0.0', () => {
 });
 
 // ============================================
-// MANEJO DE SEÑALES PARA CIERRE GRACIOSO
+// MANEJO DE SEÑALES PARA CIERRE 
 // ============================================
 process.on('SIGTERM', () => {
     console.log('🛑 Cerrando servidor...');
